@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Consortium</string>
+    <string name="nom_de_commercant">Nom de commerçant</string>
+    <string name="ouvrir">Ouvrir</string>
+    <string name="chargement">Chargement</string>
+    <string name="televerser">Téléverser</string>
+</resources>
