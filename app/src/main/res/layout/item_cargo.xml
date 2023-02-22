@@ -22,7 +22,7 @@
             android:id="@+id/imvElement_B"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="36dp"
             android:layout_marginBottom="28dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,11 +34,90 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="TextView"
+            tools:text="000,00"
             app:layout_constraintEnd_toEndOf="@+id/imvElement_B"
             app:layout_constraintStart_toStartOf="@+id/imvElement_B"
             app:layout_constraintTop_toBottomOf="@+id/imvElement_B" />
 
+        <ImageView
+            android:id="@+id/imvElement_K"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imvElement_B"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/k" />
+
+        <TextView
+            android:id="@+id/txvElement_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="000,00"
+            app:layout_constraintEnd_toEndOf="@+id/imvElement_K"
+            app:layout_constraintStart_toStartOf="@+id/imvElement_K"
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_K" />
+
+        <ImageView
+            android:id="@+id/imvElement_I"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imvElement_K"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/i" />
+
+        <TextView
+            android:id="@+id/txvElement_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="000,00"
+            app:layout_constraintEnd_toEndOf="@+id/imvElement_I"
+            app:layout_constraintStart_toStartOf="@+id/imvElement_I"
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_I" />
+
+        <ImageView
+            android:id="@+id/imvElement_Sm"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imvElement_I"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sm" />
+
+        <TextView
+            android:id="@+id/txvElement_Sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="000,00"
+            app:layout_constraintEnd_toEndOf="@+id/imvElement_Sm"
+            app:layout_constraintStart_toStartOf="@+id/imvElement_Sm"
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_Sm" />
+
+        <ImageView
+            android:id="@+id/imvElement_Ve"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imvElement_Sm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ve" />
+
+        <TextView
+            android:id="@+id/txvElement_Ve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="000,00"
+            app:layout_constraintEnd_toEndOf="@+id/imvElement_Ve"
+            app:layout_constraintStart_toStartOf="@+id/imvElement_Ve"
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_Ve" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
