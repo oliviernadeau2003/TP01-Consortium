@@ -29,16 +29,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imvLogo" />
 
-    
 
+    <include
+        layout="@layout/item_cargo"
+        app:layout_constraintTop_toBottomOf="@+id/txvTraderName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnOpen"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="296dp"
         android:text="@string/ouvrir"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnReloadCargo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,22 +48,22 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnReloadCargo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/chargement"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintBottom_toTopOf="@+id/btnUploadCargo"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpen"
+        app:layout_constraintStart_toStartOf="@+id/btnOpen"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpen" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnUploadCargo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/televerser"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintEnd_toEndOf="@+id/btnReloadCargo"
+        app:layout_constraintStart_toStartOf="@+id/btnReloadCargo"
+        app:layout_constraintTop_toBottomOf="@+id/btnReloadCargo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
