@@ -1,4 +1,4 @@
-package ca.qc.cstj.consortium.presentation.main
+package ca.qc.cstj.consortium.domain.presentation.main
 
 import androidx.lifecycle.ViewModel
 import ca.qc.cstj.consortium.domain.models.Trader
@@ -18,14 +18,13 @@ class HomeViewModel : ViewModel() {
             HomeUiState.Success(trader)
         }
     }
-
-
-    fun reloadCargo(){
+    
+    fun reloadCargo() {
         trader.reload()
         _homeUiState.value = HomeUiState.Success(trader)
     }
 
-    fun emptyCargo(){
+    fun emptyCargo() {
 
     }
 }

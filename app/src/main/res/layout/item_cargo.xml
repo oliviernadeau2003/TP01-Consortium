@@ -17,12 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <ImageView
             android:id="@+id/imvElement_B"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="24dp"
             android:layout_marginBottom="28dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,10 +33,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            tools:text="000,00"
             app:layout_constraintEnd_toEndOf="@+id/imvElement_B"
             app:layout_constraintStart_toStartOf="@+id/imvElement_B"
-            app:layout_constraintTop_toBottomOf="@+id/imvElement_B" />
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_B"
+            tools:text="000,00" />
 
         <ImageView
             android:id="@+id/imvElement_K"
@@ -54,10 +53,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            tools:text="000,00"
             app:layout_constraintEnd_toEndOf="@+id/imvElement_K"
             app:layout_constraintStart_toStartOf="@+id/imvElement_K"
-            app:layout_constraintTop_toBottomOf="@+id/imvElement_K" />
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_K"
+            tools:text="000,00" />
 
         <ImageView
             android:id="@+id/imvElement_I"
@@ -74,10 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            tools:text="000,00"
             app:layout_constraintEnd_toEndOf="@+id/imvElement_I"
             app:layout_constraintStart_toStartOf="@+id/imvElement_I"
-            app:layout_constraintTop_toBottomOf="@+id/imvElement_I" />
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_I"
+            tools:text="000,00" />
 
         <ImageView
             android:id="@+id/imvElement_Sm"
@@ -94,10 +93,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            tools:text="000,00"
             app:layout_constraintEnd_toEndOf="@+id/imvElement_Sm"
             app:layout_constraintStart_toStartOf="@+id/imvElement_Sm"
-            app:layout_constraintTop_toBottomOf="@+id/imvElement_Sm" />
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_Sm"
+            tools:text="000,00" />
 
         <ImageView
             android:id="@+id/imvElement_Ve"
@@ -114,10 +113,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            tools:text="000,00"
             app:layout_constraintEnd_toEndOf="@+id/imvElement_Ve"
             app:layout_constraintStart_toStartOf="@+id/imvElement_Ve"
-            app:layout_constraintTop_toBottomOf="@+id/imvElement_Ve" />
+            app:layout_constraintTop_toBottomOf="@+id/imvElement_Ve"
+            tools:text="000,00" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.main.HomeActivity">
+    tools:context=".domain.presentation.main.HomeActivity">
 
     <ImageView
         android:id="@+id/imvLogo"
@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txvTraderName"
+        android:id="@+id/edtTraderName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -32,7 +32,7 @@
 
     <include
         layout="@layout/item_cargo"
-        app:layout_constraintTop_toBottomOf="@+id/txvTraderName" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTraderName" />
 
     <Button
         android:id="@+id/btnOpen"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvTraderName"
+        app:layout_constraintTop_toBottomOf="@+id/edtTraderName"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
@@ -66,4 +66,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btnReloadCargo"
         app:layout_constraintStart_toStartOf="@+id/btnReloadCargo"
         app:layout_constraintTop_toBottomOf="@+id/btnReloadCargo" />
+
+    <TextView
+        android:id="@+id/txvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTraderName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

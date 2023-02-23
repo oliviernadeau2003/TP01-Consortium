@@ -4,5 +4,5 @@
     <string name="ouvrir">Ouvrir</string>
     <string name="chargement">Chargement</string>
     <string name="televerser">Téléverser</string>
-    <string name="welcome_back_player">Welcome Back @PLAYER</string>
+    <string name="welcome_back_player">Welcome Back %S</string>
 </resources>

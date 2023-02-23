@@ -1,6 +1,6 @@
 package ca.qc.cstj.consortium.domain.models
 
-class Delivery(
+data class Delivery(
     var idDelivery: Int,
     var blierium: Float = 0f,
     var vethyx: Float = 0f,
