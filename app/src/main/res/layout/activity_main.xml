@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".domain.presentation.main.HomeActivity">
+    tools:context=".presentation.main.HomeActivity">
 
     <ImageView
         android:id="@+id/imvLogo"
@@ -30,16 +30,136 @@
         app:layout_constraintTop_toBottomOf="@+id/imvLogo" />
 
 
-    <include
-        layout="@layout/item_cargo"
-        app:layout_constraintTop_toBottomOf="@+id/edtTraderName" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imvElement_B"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/b" />
+
+            <TextView
+                android:id="@+id/txvElement_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvElement_B"
+                app:layout_constraintStart_toStartOf="@+id/imvElement_B"
+                app:layout_constraintTop_toBottomOf="@+id/imvElement_B"
+                tools:text="000,00" />
+
+            <ImageView
+                android:id="@+id/imvElement_K"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imvElement_B"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/k" />
+
+            <TextView
+                android:id="@+id/txvElement_K"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvElement_K"
+                app:layout_constraintStart_toStartOf="@+id/imvElement_K"
+                app:layout_constraintTop_toBottomOf="@+id/imvElement_K"
+                tools:text="000,00" />
+
+            <ImageView
+                android:id="@+id/imvElement_I"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imvElement_K"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/i" />
+
+            <TextView
+                android:id="@+id/txvElement_I"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvElement_I"
+                app:layout_constraintStart_toStartOf="@+id/imvElement_I"
+                app:layout_constraintTop_toBottomOf="@+id/imvElement_I"
+                tools:text="000,00" />
+
+            <ImageView
+                android:id="@+id/imvElement_Sm"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imvElement_I"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sm" />
+
+            <TextView
+                android:id="@+id/txvElement_Sm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvElement_Sm"
+                app:layout_constraintStart_toStartOf="@+id/imvElement_Sm"
+                app:layout_constraintTop_toBottomOf="@+id/imvElement_Sm"
+                tools:text="000,00" />
+
+            <ImageView
+                android:id="@+id/imvElement_Ve"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imvElement_Sm"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ve" />
+
+            <TextView
+                android:id="@+id/txvElement_Ve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/imvElement_Ve"
+                app:layout_constraintStart_toStartOf="@+id/imvElement_Ve"
+                app:layout_constraintTop_toBottomOf="@+id/imvElement_Ve"
+                tools:text="000,00" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btnOpen"
-        android:layout_width="160dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="296dp"
         android:text="@string/ouvrir"
+        app:icon="@drawable/baseline_door_sliding_24"
         app:layout_constraintBottom_toTopOf="@+id/btnReloadCargo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -52,6 +172,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/chargement"
+        app:icon="@drawable/baseline_sync_24"
         app:layout_constraintBottom_toTopOf="@+id/btnUploadCargo"
         app:layout_constraintEnd_toEndOf="@+id/btnOpen"
         app:layout_constraintStart_toStartOf="@+id/btnOpen"
@@ -62,18 +183,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/televerser"
+        app:icon="@drawable/baseline_cloud_upload_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnReloadCargo"
         app:layout_constraintStart_toStartOf="@+id/btnReloadCargo"
         app:layout_constraintTop_toBottomOf="@+id/btnReloadCargo" />
 
-    <TextView
-        android:id="@+id/txvTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/btnOpen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTraderName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

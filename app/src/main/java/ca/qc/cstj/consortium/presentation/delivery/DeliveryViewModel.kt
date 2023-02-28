@@ -1,4 +1,4 @@
-package ca.qc.cstj.consortium.domain.presentation.delivery
+package ca.qc.cstj.consortium.presentation.delivery
 
 import androidx.lifecycle.ViewModel
 

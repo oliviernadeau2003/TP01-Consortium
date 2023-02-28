@@ -1,4 +1,4 @@
-package ca.qc.cstj.consortium.domain.presentation.main
+package ca.qc.cstj.consortium.presentation.main
 
 import ca.qc.cstj.consortium.domain.models.Trader
 

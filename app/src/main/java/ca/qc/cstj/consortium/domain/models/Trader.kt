@@ -12,11 +12,19 @@ data class Trader(
 ) {
 
     fun reload(){
-        blierium = Random.nextInt(50,201).toFloat()
-        vethyx = Random.nextInt(50,201).toFloat()
-        kreotrium = Random.nextInt(50,201).toFloat()
-        smiathil = Random.nextInt(50,201).toFloat()
-        laspyx = Random.nextInt(50,201).toFloat()
+        blierium += Random.nextInt(50,201).toFloat()
+        vethyx += Random.nextInt(50,201).toFloat()
+        kreotrium += Random.nextInt(50,201).toFloat()
+        smiathil += Random.nextInt(50,201).toFloat()
+        laspyx += Random.nextInt(50,201).toFloat()
+    }
+
+    fun upload(){
+        blierium = 0.0f
+        vethyx = 0.0f
+        kreotrium = 0.0f
+        smiathil = 0.0f
+        laspyx = 0.0f
     }
 
 }

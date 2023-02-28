@@ -1,4 +1,4 @@
-package ca.qc.cstj.consortium.domain.presentation.main
+package ca.qc.cstj.consortium.presentation.main
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -11,7 +11,8 @@ import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import ca.qc.cstj.consortium.R
 import ca.qc.cstj.consortium.databinding.ActivityMainBinding
-import ca.qc.cstj.consortium.domain.presentation.delivery.DeliveriesActivity
+import ca.qc.cstj.consortium.presentation.delivery.DeliveriesActivity
+import ca.qc.cstj.consortium.presentation.main.adapter.DeliveryRecyclerViewAdapter
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -20,6 +21,8 @@ class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val viewModel: HomeViewModel by viewModels()
+
+    private val deliveryRecyclerViewAdapter = DeliveryRecyclerViewAdapter((listOf()))
 
     @SuppressLint("ShowToast")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,8 +40,13 @@ class HomeActivity : AppCompatActivity() {
                     Snackbar.LENGTH_INDEFINITE
                 ).show() // Set Action on click ?? (refill?)
                 is HomeUiState.Success -> {
+                    val trader = it.trader
                     with(binding) {
-
+                        txvElementB.text = String.format("%.2f",trader.blierium)
+                        txvElementI.text = String.format("%.2f",trader.laspyx)
+                        txvElementK.text = String.format("%.2f",trader.kreotrium)
+                        txvElementSm.text=  String.format("%.2f",trader.smiathil)
+                        txvElementVe.text = String.format("%.2f",trader.vethyx)
                     }
                 }
             }
